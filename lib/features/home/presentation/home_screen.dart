@@ -1,5 +1,6 @@
-import 'package:bookly/features/home/views/widgets/custom_app_bar.dart';
-import 'package:bookly/features/home/views/widgets/top_books_list_builder.dart';
+import 'package:bookly/features/home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:bookly/features/home/presentation/views/widgets/top_books_list_builder.dart';
+import 'package:bookly/features/home/presentation/views/widgets/top_seller_list_builder.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -14,23 +15,26 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start, // Align children to the left
         children: [
           CustomAppBar(),
-          SizedBox(height: 16.0), // Spacing between widgets
+          SizedBox(height: 16.0),
+          Expanded(
+            child: TopBooksListBuilder(),
+          ),
+          SizedBox(height: 16.0),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0), // Add horizontal padding
+            padding: EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
-              "Top Books",
+              "Best Sellers",
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
-          SizedBox(height: 8.0), // Spacing before the list
+          SizedBox(height: 8.0),
           Expanded(
-            child: TopBooksListBuilder(), // Expand list to take available space
+            child: TopSellerListBuilder(),
           ),
         ],
       ),

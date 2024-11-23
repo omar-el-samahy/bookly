@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'features/home/home_screen.dart';
-import 'features/splash/presentation/splash_screen.dart';
+import 'features/home/presentation/home_screen.dart';
+import 'features/splash/presentation/views/splash_screen.dart';
 
 void main() {
   runApp(const Bookly());

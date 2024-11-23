@@ -11,14 +11,14 @@ class TopBooksContainer extends StatelessWidget {
       decoration: BoxDecoration(
         image: const DecorationImage(
           image: AssetImage("assets/the_jungle_book.png"),
-          fit: BoxFit.cover, // Ensures the image covers the container
+          fit: BoxFit.cover,
         ),
-        borderRadius: BorderRadius.circular(12), // Optional: Rounded corners
+        borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
-            offset: const Offset(2, 4), // Subtle shadow
+            offset: const Offset(2, 4),
           ),
         ],
       ),
