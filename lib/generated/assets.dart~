@@ -14,7 +14,7 @@ class Assets {
   static const String viewsWidgetsTopSellerContainer =
       'lib/features/home/views/widgets/top_seller_books.dart~';
   static const String widgetsCustomAppBar =
-      'lib/features/home/views/widgets/home_app_bar.dart';
+      'lib/features/home/views/widgets/custom_app_bar.dart';
   static const String widgetsSplashImage =
       'lib/features/splash/presentation/views/widgets/splash_image.dart';
   static const String widgetsSplashText =

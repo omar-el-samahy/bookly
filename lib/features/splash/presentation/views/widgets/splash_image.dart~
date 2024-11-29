@@ -31,9 +31,7 @@ class _SplashImageState extends State<SplashImage>
         position: image,
         child: AspectRatio(
           aspectRatio: 9 / 6,
-          child: Image.asset(
-            "assets/bookly_logo.png",
-          ),
+          child: Image.asset("assets/bookly_logo.png",),
         ),
       ),
       // Container(
