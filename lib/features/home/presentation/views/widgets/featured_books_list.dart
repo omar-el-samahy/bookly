@@ -1,5 +1,6 @@
-import 'package:bookly/features/home/presentation/views/widgets/featured_books.dart';
 import 'package:flutter/material.dart';
+
+import 'featured_books.dart';
 
 class TopBooksListBuilder extends StatelessWidget {
   const TopBooksListBuilder({super.key});

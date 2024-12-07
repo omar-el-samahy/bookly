@@ -5,18 +5,13 @@ class FeaturedBooks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 6 / 9,
-      child: InkWell(
-        onTap: () {},
-        child: Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/the_jungle_book.png"),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
+    return InkWell(
+      onTap: () {},
+      splashColor: Colors.grey,
+      child: Image.network(
+        "assets/the_jungle_book.png",
+        width: 150,
+        height: 224,
       ),
     );
   }

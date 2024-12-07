@@ -7,7 +7,7 @@ class TopSellerBooksList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemBuilder: (context, index) => TopSellerBooks(),
+      itemBuilder: (context, index) => const TopSellerBooks(),
       itemCount: 10,
     );
   }
